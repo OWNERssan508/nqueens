@@ -4,7 +4,9 @@
 bool solve_nqueens_util(int board[], int col, int n) {
     if (col >= n) {
         print_board(board, n); // Print the current solution
-        return true; 
+        return false; 
+	// Changed True --> False
+
     }
 
     for (int i = 0; i < n; i++) {
